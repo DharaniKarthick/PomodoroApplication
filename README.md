@@ -1,4 +1,4 @@
-#Pomodoro Application
+# Pomodoro Application
 
 This project implements a Pomodoro Timer that uses Angular for frontend, .NET Core WebAPI for backend and uses SQL Server for database Operations.
 
@@ -23,7 +23,7 @@ Click on View -> Server Explorer -> You can see the Pomodoro database there. Rig
 
 Develop the code to implement the pomodoro timer.
 
-#.NET Core WebAPI
+# .NET Core WebAPI
 
 This project used .NET Core 6 for implementing WebAPI.
 Once the user logs-in, the JWT token is generated and sent to the frontend for authorization.
