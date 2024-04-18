@@ -1,0 +1,80 @@
+<!--<div class="container"> 
+<div class="list" *ngFor="let task of tasks">
+  <div>{{ task.title }}</div>
+  <div>{{ task.description }}</div>
+  <button (click)="editTask(task.id)">Edit</button>
+  <button (click)="deleteTask(task.id)">Delete</button>
+  <button (click)="navigateToPomodoro(task.id, task.title)">Go to Pomodoro</button>
+</div>
+<div *ngIf="showForm">
+  <div class="task">
+  <input [(ngModel)]="newTask.title" placeholder="Title">
+  <input [(ngModel)]="newTask.description" placeholder="Description">
+  <button class="btn" *ngIf="!editingTaskId" (click)="addTask()">Add Task</button>
+  <button class="btn" *ngIf="editingTaskId" (click)="updateTask()">Update Task</button>
+    </div>
+</div>
+<button class ="placeholder" (click)="showForm = !showForm">{{ showForm ? '' : 'Add Task' }}</button>
+  </div>-->
+
+<div class="list" *ngFor="let task of tasks">
+  <!--<div class="row">
+  <div class="col-12 col-md-6 bg-success d-flex
+                    justify-content-center align-items-center
+                    text-light h3">
+  <div class="task-header"><h5>{{ task.title }}</h5> - {{ task.description }}</div>
+  <div class="buttons-container">
+    <button (click)="editTask(task.id)" class="edit-button">&#9998;</button>
+    <button (click)="deleteTask(task.id)" class="delete-button">&#128465;</button>
+    <button (click)="navigateToPomodoro(task.id, task.title)" class="pomodoro-button">Start</button>
+  </div>
+  </div>
+    </div>-->
+  <div class="row">
+    <div class="col-3 d-none col-md-3 d-md-block"></div>
+
+    <div class="col-12 col-md-6 taskcomp">
+      <div class="taskContent">
+        <div class="task-header">
+          <h5>{{ task.title }}</h5>  <span>- {{ task.description }}</span>
+        </div>
+        <div class="buttons-container">
+          <button (click)="editTask(task.id)" class="btn edit-button">Edit</button>
+          <button (click)="deleteTask(task.id)" class="btn delete-button">Delete</button>
+          <button (click)="navigateToPomodoro(task.id, task.title)" class="btn pomodoro-button">Start Timer</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 d-none col-md-3 d-md-block"></div>
+  </div>
+</div>
+<div *ngIf="showForm">
+  <div class="modal-content popup-background">
+    <div class="modal-header">
+      <h4 class="modal-title header-font">Task Manager</h4>
+      <img src="assets/images/close-button.svg" class="close" data-dismiss="modal" (click)="todoModalClose()">
+    </div>
+    <div class="modal-body">
+
+      <input type="hidden" id="form_id">
+      <div class="form-group">
+        <input type="text" id="title" name="title" placeholder="Title" class="form-control  mt-4" [(ngModel)]="newTask.title">
+      </div>
+
+      <div id="notes" class="mt-4">
+        <div class="form-group">
+          <textarea class="form-control" placeholder="Notes" rows="5" id="notes_value" name="notes_value" [(ngModel)]="newTask.description"></textarea>
+        </div>
+      </div>
+
+
+
+      <div id="tmpChecklist" class="mt-4"></div>
+    </div>
+    <div class="modal-footer" id="todo_button">
+      <button type="button" class="submit-button btn btn-lg" (click)="addTask()">Save</button>
+    </div>
+  </div>
+  </div>
+    <button class="tasktodo" (click)="showForm = !showForm">{{ showForm ? '' : 'Add Task' }}</button>

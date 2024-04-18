@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "angularapp", "angularapp\angularapp.esproj", "{2026EEF6-36FC-49D8-B7FF-C7536391C7E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webapi", "webapi\webapi.csproj", "{36AB794E-0452-4C00-AB79-CF9F78A04807}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabasePomodoro", "DatabasePomodoro\DatabasePomodoro.csproj", "{335F3195-54C6-414B-9AC4-20F1F780FC52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2026EEF6-36FC-49D8-B7FF-C7536391C7E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2026EEF6-36FC-49D8-B7FF-C7536391C7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2026EEF6-36FC-49D8-B7FF-C7536391C7E3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2026EEF6-36FC-49D8-B7FF-C7536391C7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2026EEF6-36FC-49D8-B7FF-C7536391C7E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2026EEF6-36FC-49D8-B7FF-C7536391C7E3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{36AB794E-0452-4C00-AB79-CF9F78A04807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AB794E-0452-4C00-AB79-CF9F78A04807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AB794E-0452-4C00-AB79-CF9F78A04807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AB794E-0452-4C00-AB79-CF9F78A04807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335F3195-54C6-414B-9AC4-20F1F780FC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335F3195-54C6-414B-9AC4-20F1F780FC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335F3195-54C6-414B-9AC4-20F1F780FC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335F3195-54C6-414B-9AC4-20F1F780FC52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {817F70B6-53AC-469E-B01F-75AD1AEF8814}
+	EndGlobalSection
+EndGlobal
